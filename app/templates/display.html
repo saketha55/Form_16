@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>JSON Content</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous"
+    />
+    <script>
+      var jsonfile ={{jsonfile}};
+    </script>
+
+
+  </head>
+  <body>
+      
+    <div class="container" style="width:350px; margin:0 auto;">
+    {{jsonfile}}
+  </div>
+  </body>
+  <!-- <body>
+    <h1>My Heading</h1>
+    <table id="example" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Certificate Number</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Extn.</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                    <th>cd num1</th>
+                    <th>cd num2</th>
+                    <th>cd num3</th>
+                    <th>cd num4</th>
+                    <th>cd num5</th>
+                    <th>cd num6</th>
+                    <th>cd num7</th>
+                </tr>
+            </thead>
+            
+        </table>
+    <script>
+    function setupData() {
+        $(document).ready(function () {
+            $('#example').DataTable({
+                "ajax": {
+                    "url": "/Users/gsaketha/Desktop/Form_16/yolov5/runs/output_json/output.json", 
+                    "dataType": "json",
+                    "dataSrc": "jsonfile",
+                    "contentType":"application/json"
+                },
+                "columns": [
+                    {"jsonfile": "Certificate Number"},
+                    {"jsonfile": "Last Updated"},
+                    {"jsonfile": "Name - Address_Employer"},
+                    {"jsonfile": "Name - Address_Employee"},
+                    {"jsonfile": "Deducter PAN Number"},
+                    {"jsonfile": "Deducter TAN Number"},
+                    {"jsonfile": "PAN Number"},
+                    {"jsonfile": "Assessment Year"},
+                    {"jsonfile": "Period with Employer"},
+                    {"jsonfile": "Gross Salary"},
+                    {"jsonfile": "Quarter"},
+                    {"jsonfile": "Total Tax payable"},
+                    {"jsonfile": "Aggregate"}
+                ]
+            });
+        });
+    }
+    $( window ).on( "load", setupData );
+    </script>
+    </body> -->
+</html>
